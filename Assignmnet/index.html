@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="logo">Assignment</div>
+        <img src="img/pc.jpg"  class="bg">
+        <div class="content">
+            <h2>Welcome to <br> My Assignmnet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque, velit odio architecto autem dolores saepe vitae repudiandae, voluptatem officiis nobis, aut minima sed exercitationem. Saepe sint ipsa quibusdam dignissimos.</p>
+            <a href="#">Get Started</a>
+            <!-- <p class="copyrightText">@2023 Chandigarh University</p> -->
+        </div>
+    </section>
+
+        <div class="menu" onclick="toggleMenu();"></div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="socialmedia">
+                <ul>
+                    <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+                </ul>
+                <a href="mailto:you@email.com" class="emailbox"><img src="img/email.png" alt=""></a>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            function toggleMenu(){
+                var menu = document.querySelector('.menu');
+                var nav = document.querySelector('.nav');
+                menu.classList.toggle('active');
+                nav.classList.toggle('active');
+            }
+        </script>
+</body>
+</html>
